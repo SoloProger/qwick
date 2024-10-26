@@ -1,0 +1,33 @@
+.relative {
+  position: relative;
+}
+
+.absolute {
+  position: absolute;
+}
+
+@for $count from 0 through 1000 {
+  .t-#{$count} {
+    top: 1px * $count;
+  }
+
+  .b-#{$count} {
+    bottom: 1px * $count;
+  }
+
+  .l-#{$count} {
+    left: 1px * $count;
+  }
+
+  .r-#{$count} {
+    right: 1px * $count;
+  }
+}
+
+.r-0 {
+  right: 0;
+}
+
+.z-index {
+  z-index: 1;
+}

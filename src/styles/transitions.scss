@@ -1,0 +1,7 @@
+.transition {
+  transition: 1s;
+
+  &-fast {
+    transition: 0.5s;
+  }
+}

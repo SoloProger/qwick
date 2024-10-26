@@ -1,0 +1,19 @@
+@import "_mixins.scss";
+@import "../colors";
+
+
+.text-decor-none {
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-start {
+  text-align: start;
+}
+
+.text-end {
+  text-align: end;
+}

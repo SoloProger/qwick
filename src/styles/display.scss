@@ -1,0 +1,46 @@
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-center {
+  align-items: center;
+}
+
+.as-center {
+  align-self: center;
+}
+
+.jc-space {
+  justify-content: space-between;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+.jc-end {
+  justify-content: flex-end;
+}
+
+.ai-end {
+  align-items: flex-end;
+}
+
+@for $count from 0 through 100 {
+  .gap-#{$count} {
+    gap: 1px * $count;
+
+    &-i {
+      gap: 1px * $count !important;
+    }
+  }
+}
+
+.display-none {
+  display: none;
+}
