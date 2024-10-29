@@ -1,0 +1,40 @@
+.btn {
+  border: none;
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 16.34px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.button {
+  border: none;
+  border-radius: 8px;
+  padding: 15.25px 44px;
+  background-color: #4F8BE4;
+
+  &--outline {
+    .btn {
+      color: #979DBB;
+    }
+
+    background-color: #F5F7FB;
+  }
+
+  &--big {
+    padding: 13.75px 66.90px;
+
+    .btn {
+      font-size: 14px;
+      line-height: 19.07px;
+    }
+  }
+
+  &--small {
+    padding: 4px 39.85px;
+
+    .btn {
+      font-weight: 700;
+    }
+  }
+}
