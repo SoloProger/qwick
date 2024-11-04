@@ -1,0 +1,47 @@
+:host {
+
+
+  .filter-wrapper {
+    background: #F5F7FB;
+    display: flex;
+    align-items: center;
+  }
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    &::after {
+      content: "";
+      border: 1px solid #A9ABBA;
+      height: 25px;
+      margin-left: 10px;
+    }
+  }
+
+  .filter-text {
+    font-size: 14px;
+    font-weight: 600;
+    color: #A9ABBA;
+  }
+
+  .search {
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #A9ABBA;
+    background: transparent;
+    width: 100%;
+
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #A9ABBA;
+    }
+  }
+}
