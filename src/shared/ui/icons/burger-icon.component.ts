@@ -1,4 +1,4 @@
-import { Component, HostListener } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostListener } from '@angular/core';
 
 @Component({
   selector: 'app-burger-icon',
@@ -15,6 +15,7 @@ import { Component, HostListener } from '@angular/core';
     </svg>
   `,
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class BurgerIconComponent {
   public color = '#979DBB';
