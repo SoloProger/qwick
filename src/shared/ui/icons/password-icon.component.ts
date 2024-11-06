@@ -1,4 +1,4 @@
-import { Component, HostListener, Input } from '@angular/core';
+import { ChangeDetectionStrategy, Component, HostListener, Input } from '@angular/core';
 
 @Component({
   selector: 'app-password-icon',
@@ -35,6 +35,7 @@ import { Component, HostListener, Input } from '@angular/core';
     }
   `,
   standalone: true,
+  changeDetection: ChangeDetectionStrategy.OnPush,
 })
 export class PasswordIconComponent {
   @Input() isHide: boolean = false;
