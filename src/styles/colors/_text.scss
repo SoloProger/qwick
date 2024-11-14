@@ -1,0 +1,17 @@
+.bl-color {
+  color: #4f8be4;
+}
+@for $count from 0 through 50 {
+  .fs-#{$count} {
+    font-size: 1px * $count;
+  }
+}
+
+.t-w{
+  font-weight: 800;
+}
+
+.t-input::placeholder {
+  color: #A9ABBA;
+  opacity: 0.4;
+}

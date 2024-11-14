@@ -28,5 +28,6 @@ import { AddFileComponent } from '../shared/ui/add-file/add-file.component';
     AddFileComponent,
   ],
   templateUrl: './app.component.html',
+  styleUrl: './app.component.scss',
 })
 export class AppComponent {}
