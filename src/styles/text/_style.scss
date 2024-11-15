@@ -1,7 +1,6 @@
 @import "_mixins.scss";
 @import "../colors";
 
-
 .text-decor-none {
   text-decoration: none;
 }
@@ -16,4 +15,16 @@
 
 .text-end {
   text-align: end;
+}
+
+@for $count from 0 through 50 {
+  .fs-#{$count} {
+    font-size: 1px * $count;
+  }
+}
+
+@for $count from 0 through 9 {
+  .fw-#{$count} {
+    font-weight: 100 * $count;
+  }
 }
