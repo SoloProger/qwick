@@ -1,0 +1,39 @@
+<section class="jc-center ai-center flex h-vh-80">
+  <div>
+    <p class="bl-color fs-48 t-w flex mb-50 jc-center">Qwick</p>
+    <form [formGroup]="registerForm">
+      <div class="flex-col mb-16">
+        <div class="float-containter">
+          <input
+            type="text"
+            name="log"
+            placeholder="Email"
+            class="br-reg in-focus"
+            formControlName="login"
+          />
+          <label for="log" class="floating">Логин</label>
+        </div>
+      </div>
+      <div class="flex-col mt-50">
+        <div class="float-containter">
+          <input
+            type="password"
+            name="ps"
+            placeholder="Enter password"
+            class="br-reg in-focus"
+            formControlName="password"
+          />
+          <label for="ps" class="floating">Password</label>
+        </div>
+        <button class="btn-reg mt-24" type="button" (click)="register()">
+          Зарегистрироваться
+        </button>
+        <hr class="hr" />
+      </div>
+    </form>
+    <div class="flex jc-center ai-center gap-10 mt-14">
+      <p>У вас есть учетная запись?</p>
+      <a routerLink="/auth/login" class="link-reg">Войти</a>
+    </div>
+  </div>
+</section>
