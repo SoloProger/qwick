@@ -10,6 +10,7 @@ import { EditIconComponent } from '../shared/ui/icons/edit-icon.component';
 import { AIconComponent } from '../shared/ui/icons/a-icon.component';
 import { AddFileIconComponent } from '../shared/ui/icons/add-file-icon.component';
 import { AddFileComponent } from '../shared/ui/add-file/add-file.component';
+import {IconComponent} from "../shared/ui/icon/icon.component";
 
 @Component({
   selector: 'app-root',
@@ -26,6 +27,7 @@ import { AddFileComponent } from '../shared/ui/add-file/add-file.component';
     AIconComponent,
     AddFileIconComponent,
     AddFileComponent,
+    IconComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
