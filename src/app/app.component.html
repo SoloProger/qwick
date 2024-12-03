@@ -1,15 +1,13 @@
 <!-- <router-outlet></router-outlet> -->
-<section class="flex-col jc-space sidebar wp-268 h-vh-100 p-y-40 p-x-50">
-  <p class="text-center fs-32 fw-6 t-w-color">Qwick</p>
-  <ul class="list-none flex-col gap-30 fs-14 t-w-color">
-    <li>Главная</li>
-    <li>ОФС</li>
-    <li>Регламенты</li>
-    <li>Мои обязанности</li>
-    <li>Отчеты</li>
-    <li>Коммуникации</li>
-    <li>Сотрудники</li>
-    <li>Оплата</li>
+<section class="flex-col jc-space sidebar wp-268 h-vh-100 text-center">
+  <p class=" fs-32 fw-6 t-w-color mt-60">Qwick</p>
+  <ul class="list-none flex-col fs-14 t-w-color max-wp-220 ml-20">
+    @for (menu of menushki; track menu) {
+      <li class="flex ai-center gap-10 menu-hover">
+        <app-icon class="max-wp-24" [iconName]="menu.img"></app-icon>
+        {{ menu.name }}
+      </li>
+    }
   </ul>
   <div class="flex-col gap-10 fs-13 t-w-color">
     <p>Политика конфиденциальности</p>

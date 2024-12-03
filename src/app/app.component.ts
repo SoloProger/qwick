@@ -10,7 +10,7 @@ import { EditIconComponent } from '../shared/ui/icons/edit-icon.component';
 import { AIconComponent } from '../shared/ui/icons/a-icon.component';
 import { AddFileIconComponent } from '../shared/ui/icons/add-file-icon.component';
 import { AddFileComponent } from '../shared/ui/add-file/add-file.component';
-import {IconComponent} from "../shared/ui/icon/icon.component";
+import { IconComponent } from '../shared/ui/icon/icon.component';
 
 @Component({
   selector: 'app-root',
@@ -32,4 +32,39 @@ import {IconComponent} from "../shared/ui/icon/icon.component";
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
 })
-export class AppComponent {}
+export class AppComponent {
+  public menushki = [
+    {
+      name: 'Главная',
+      img: 'home',
+    },
+    {
+      name: 'ОФС',
+      img: 'ofc',
+    },
+    {
+      name: 'Регламенты',
+      img: 'list',
+    },
+    {
+      name: 'Мои обязанности',
+      img: 'todo',
+    },
+    {
+      name: 'Отчеты',
+      img: 'report',
+    },
+    {
+      name: 'Коммуникации',
+      img: 'message',
+    },
+    {
+      name: 'Сотрудники',
+      img: 'group',
+    },
+    {
+      name: 'Оплата',
+      img: 'wallet',
+    },
+  ];
+}

@@ -5,8 +5,20 @@
   border-bottom-right-radius: 40px;
 }
 
-.li {
-  font-size: 17px;
-  padding: 0 50px;
-  color: #fff;
+//.li {
+//  font-size: 17px;
+//  //padding: 0 10px;
+//  color: #fff;
+//}
+
+.menu-hover {
+  padding: 16px 28px ;
+
+  &:hover {
+    border: none;
+    border-radius: 12px;
+    background-color: #f2f6fc;
+    color: #1c1d20;
+    font-weight: 600;
+  }
 }
